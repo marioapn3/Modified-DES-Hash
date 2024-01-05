@@ -1,12 +1,8 @@
-## Modified
-======================================================================================================================
-Proses                 |  Before Modified                       |  After Modified
-======================================================================================================================
-GENERATE KEYS          |	Shifting ke kiri                      |  Shifting ke kanan
-GENERATE KEYS          |  "# Jumlah pergeseranround_shifts =    |  # Jumlah pergeseran (contoh: urutan Fibonacci) 
-                       |  [1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2,     |  round_shifts = [1, 1, 2, 3, 5, 8, 13, 21,
-                       |  2, 2, 2, 2, 1]"	                      |  34, 55, 89, 144, 233, 377, 610, 987]
-GENERATE KEYS	         |  Kunci ada 16 ( k1 - k16 )	            |  Kunci ada 16 ( k1 - k24)
-GENERATE KEYS	         |                                        |  Penmbahan Tabel PC - 3
-ENKRIPSI  DAN DEKRIPSI |	Rounds alur sebanyak 16 x             |  Rounds alur sebanyak 24 x
-ENKRIPSI  DAN DEKRIPSI |	Menggunakan fungsi XOR	              |  Menggunakan fungsi xnor
+| Proses                 | Before Modified                                                                         | After Modified                                                                                   |
+|------------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| GENERATE KEYS          | Shifting Right from Left                                                                | Shifting from Left to Right                                                                      |
+| GENERATE KEYS          |                                                                                         | Add Table PC - 3                                                                                 |
+| GENERATE KEYS          | Rounds Shift = [1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 2, 3, 5, 8, 13, 21, 2, 2, 2, 2, 1]  | Shifround_shifts = [1, 1, 2, 3, 5, 8, 13, 21,34, 55, 89, 144, 233, 377, 610, 987] Using Fibonaci |
+| GENERATE KEYS          | Have 16 Keys                                                                            | Have 24 Keys                                                                                     |
+| ENKRIPSI  DAN DEKRIPSI | Have 16 Rounds                                                                          | Have 24 Rounds                                                                                   |
+| ENKRIPSI  DAN DEKRIPSI | Using XOR                                                                               | Using XNOR                                                                                       |
