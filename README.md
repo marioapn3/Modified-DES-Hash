@@ -1,4 +1,4 @@
-| Proses                 | Before Modified                                                                         | After Modified                                                                                   |
+| PROCCESS               | Before Modified                                                                         | After Modified                                                                                   |
 |------------------------|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | GENERATE KEYS          | Shifting Right from Left                                                                | Shifting from Left to Right                                                                      |
 | GENERATE KEYS          |                                                                                         | Add Table PC - 3                                                                                 |
